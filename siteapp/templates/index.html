@@ -15,33 +15,26 @@
  <div id='loadingPage' style="background-color:#002d6b;position:fixed;top:0%;left:0%;width:100%;height:100%;z-index:1000;">
  	<span style="display:inline-block;width:100%;height:40%"></span>
  	<span id="loadingText" style="display:inline-block;width:100%;text-align:center;color:white;font-size:64px;opacity:1;">timothy.stimpson.com is loading</span>
-
  </div>
 
  <div id='headerTextFrame'>
  	<div id='headerText'>Personalised online business and marketing solutions
  	</div>
-
  </div>
 
 <img id = 'landing_background_sky' src="{% static 'images/blue_sky.jpg' %}" alt="backgroundimage">
 <img id = 'landing_background_night' src="{% static 'images/man_office.jpg' %}" alt="backgroundimage">
 
 <svg id='active_frame'>
-
 	<defs>
-
 	    <linearGradient id="line_grad" x1="40%" x2="40%" y1="75%" y2="65%" gradientUnits="userSpaceOnUse">
-	      <stop stop-color="white" offset="0"/>
-	      <stop stop-color="black" offset="1"/>
-
+			<stop stop-color="white" offset="0"/>
+		    <stop stop-color="black" offset="1"/>
 	    </linearGradient>
 	    <linearGradient id="line_grad2" gradientUnits="objectBoundingBox">
-	      <stop stop-color="black" offset="0.5"/>
-	      <stop stop-color="white" offset="0.9"/>
+	      	<stop stop-color="black" offset="0.5"/>
+	      	<stop stop-color="white" offset="0.9"/>
 	    </linearGradient>
-
-
 	    <radialGradient id="button_surface2" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
 	    	<stop stop-color="#7ab2ff" offset="0.00"/>  
 			<stop stop-color="#4d97ff" offset="0.05"/>  	
@@ -50,52 +43,34 @@
 	      	<stop stop-color="#002252" offset="0.98"/>
 	     	<stop stop-color="#002d6b" offset="0.99"/>
 	    </radialGradient>
-
 	    <radialGradient id="button_surface_blue" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
 	    	<stop stop-color="#7ab2ff" offset="0.00"/>  
-
 	      	<stop stop-color="#004fbd" offset="0.57"/>
-
 	     	<stop stop-color="#002d6b" offset="1"/>
 	    </radialGradient>
-
 	    <radialGradient id="button_surface_brown" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
 	    	<stop stop-color="#8686ac" offset="0.00"/>  
-
 	      	<stop stop-color="#3e3e5b" offset="0.57"/>
-
 	     	<stop stop-color="#1f1f2e" offset="1"/>
 	    </radialGradient>
-
 		<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
 			<feGaussianBlur stdDeviation="2 2" result="shadow"/>
 			<feOffset dx="3" dy="3"/>
 		</filter>
   	</defs>
-
 	<line id='awareness_line_outer' x1="40%" x2="50%" y1="50%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
-
 	<line id='awareness_line_middle' x1="35%" x2="40%" y1="35%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
-	
 	<line  id='awareness_line_inner' x1="15%" x2="35%" y1="35%" y2="35%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
-
 	<circle id='awareness_hub' cx="15%" cy="35%" r="30" fill="url(#button_surface_blue)" stroke="002252" stroke-width="0%" />
-
-
 	<line id='trialrepeat_line_middle' x1="40%" x2="46.5%" y1="65%" y2="55%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
 	<line id='trialrepeat_line_inner' x1="40%" x2="40%" y1="75%" y2="65%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
 	<line id='trialrepeat_line_outer' x1="46.5%" x2="50%" y1="55%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
-
 	<line id='manage_line_outer' x1="60%" x2="50%" y1="50%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
 	<line id='manage_line_middle' x1="70%" x2="60%" y1="50%" y2="50%" stroke='#cce1ff' stroke-width="0.25%" stroke-dasharray="10, 10"/>
 	<line id='manage_line_inner' x1="75%" x2="70%" y1="55%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
-
 	<circle id='manage_hub' cx="75%" cy="55%" r="30" fill="url(#button_surface_blue)" stroke="002252" stroke-width="0%" />
-
 	<circle id='trialrepeat_hub' cx="40%" cy="75%" r="30px" fill="url(#button_surface_blue)" stroke-width="0%" />
 	<circle id='innovation_hub' cx="50%" cy="50%" r="40px"  fill="url(#button_surface_blue)" stroke="#002252" stroke-width="0%"/>
-
-
 	<text id='innovation_text_shadow' style="filter: url(#shadow); fill: black" x="46%" y="43%">myProfile</text>
 	<text id='innovation_text' x="46%" y="43%">myProfile</text>
 	<text id='awareness_text_shadow' style="filter: url(#shadow); fill: black" x="12%" y="28%">website</text>
@@ -104,20 +79,16 @@
 	<text id='trialrepeat_text' x="35%" y="84%">eCommerce</text>
 	<text id='manage_text_shadow' style="filter: url(#shadow); fill: black" x="68%" y="65%">solutions</text>
 	<text id='manage_text' x="68%" y="65%">solutions</text>
-
 </svg>
 
-<div id='menuFrameBackground' >
-
+<div id='menuFrameBackground'>
 </div>
 
 <svg id='menuFrame' >
-
 	<circle id='menuHub' cx="90%" cy="50%" r="8%" fill="url(#button_surface_blue)" stroke="#8686ac" stroke-width="1px" />
 	<text id='backText' x="90%" y="52%" text-anchor="middle" style="fill: white">menu</text>
 	<text id='menuTextShadow' style="filter: url(#shadow); fill: black" x="7.5%" y="35%">website</text>
 	<text id='menuText' x="7.5%" y="35%" style="fill: white" >website</text>
-
 </svg>
 
 <svg id='menu_bars'>
@@ -125,10 +96,6 @@
 	<line id='menu_middle' x1="30%" x2="70%" y1="50%" y2="50%" stroke-linecap="round" stroke="white" stroke-width="5px"/>
 	<line id='menu_bottom' x1="35%" x2="65%" y1="70%" y2="70%" stroke-linecap="round" stroke="white" stroke-width="5px"/>
 </svg>
-
-
-
-
 
 <div id = "contactPage">
 	<div id = 'contactPhone'>
@@ -308,22 +275,30 @@
 			<img id="discogHome" class="discogImages" src="{% static 'images/discogHome.png' %}" alt="portalHome">
 			<img id="discogHomeBack" class="discogImagesBack" src="{% static 'images/discogHomeBack.png' %}" alt="portalHome">
 			<div id="discogHomeIcon" class="discoginformationIconRow">
-				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+				<div id="discoginformationIcon">
+					<span class="discoginformationIconText"><i>i</i></span>
+				</div>
 			</div>
 			<img id="discogArtist" class="discogImages" src="{% static 'images/discogArtist.png' %}" alt="portalDetails">
 			<img id="discogArtistBack" class="discogImagesBack" src="{% static 'images/discogArtistBack.png' %}" alt="portalHome">
 			<div id="discogArtistIcon" class="discoginformationIconRow">
-				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+				<div id="discoginformationIcon">
+					<span class="discoginformationIconText"><i>i</i></span>
+				</div>
 			</div>
 			<img id="discogAlias1" class="discogImages" src="{% static 'images/discogAlias1.png' %}" alt="portalSummary">
 			<img id="discogAlias1Back" class="discogImagesBack" src="{% static 'images/discogAlias1Back.png' %}" alt="portalHome">
 			<div id="discogAlias1Icon" class="discoginformationIconRow">
-				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+				<div id="discoginformationIcon">
+					<span class="discoginformationIconText"><i>i</i></span>
+				</div>
 			</div>
 			<img id="discogAlias2" class="discogImages" src="{% static 'images/discogAlias2.png' %}" alt="portalForms">
 			<img id="discogAlias2Back" class="discogImagesBack" src="{% static 'images/discogAlias2Back.png' %}" alt="portalHome">
 			<div id="discogAlias2Icon" class="discoginformationIconRow">
-				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+				<div id="discoginformationIcon">
+					<span class="discoginformationIconText"><i>i</i></span>
+				</div>
 			</div>
 			<div class='coverFilter'></div>
 		</div>
@@ -409,7 +384,6 @@
 
 </div>
 
-
 <svg id="webSiteStandout">
 	  <defs>
 	    <mask id="mask" x="0%" y="0%" width="100%" height="100%">
@@ -418,15 +392,11 @@
 	    </mask>
 
 	  </defs>
-
 	  <rect id="standoutRect" x="0%" y="0%" width="100%" height="100%" stroke="white" rx="2" stroke-width='0.25' mask="url(#mask)" fill="#001533" fill-opacity="0.8"/>    
 </svg>
 
 <div id = "webSite">
-
 	<h1 id="websiteServicesText" class='textCentre'>Services and Approach</h1>
-
-
 	<div id = 'websiteApproach'>
 			<p class="servicesinfo"><i>A personalised on-line experience tailored to your needs with user interaction, data storage and hosting.</i></p>
 			<hr>
@@ -442,34 +412,23 @@
 			<li>Custom logos and animations to differentiate your site from the competiton.</li>
 			<li>SEO best practices applied to ensure you site can be seen.</li>						
 		</ul>
-
-
 	</div>
-
-
 	<h1 class='textCentre'>Components</h1>
 
 	<div id = 'websiteServices'>
-
-
 		<div class='imageContainer'>
-
 			<img class='servicesImages' src="{% static 'images/analysisdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/webdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/logodesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/seodesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/animatedesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/interactivedesign-logo.png' %}" alt="backgroundimage">
-
 		</div>
-
 	</div>
-
 </div>
 
 
 <div id='webSiteCarosel'>
-
 	<h1 id="webSiteCaroselText">Showcase your products and services</h1>
 	<div class="container">
 	  <div id="carousel">
@@ -486,8 +445,6 @@
 <div id = "marketSite">
 
 	<h1 id="websiteServicesText" class='textCentre'>Services and Approach</h1>
-
-
 	<div id = 'marketsiteApproach'>
 		<p class="servicesinfo"><i>A personalised on-line shop front experience tailored to your needs, with a host of functions and features to make your experience great, as well as your customers.</i></p>
 			<hr>
@@ -512,17 +469,10 @@
 			<li>Automatted reports and metrics to help understand your business.</li>			
 			<li>SEO best practices applied to ensure you site can be seen.</li>						
 		</ul>
-
 	</div>
-
-
 	<h1 class='textCentre'>Components</h1>
-
 	<div id = 'marketsiteServices'>
-
-
 		<div class='imageContainer'>
-
 			<img class='servicesImages' src="{% static 'images/analysisdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/webdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/logodesign-logo.png' %}" alt="backgroundimage">
@@ -535,20 +485,12 @@
 			<img class='servicesImages' src="{% static 'images/metricsdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/reportingdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/automatedesign-logo.png' %}" alt="backgroundimage">
-
 		</div>
-
-
 	</div>
-
-
 </div>
 
 <div id='webSitebbc'>
-
-
 	<svg id="bbcImagesSVG">
-
 		<text x="50%" y="10%" stroke="white" text-anchor="middle" fill="white" font-style = 'normal' font-size = "6vh">Automation</text>
 		<line x1="20%" x2="50%" y1="43%" y2="43%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
 		<line x1="50%" x2="80%" y1="43%" y2="23%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
@@ -560,30 +502,22 @@
 		<circle  id="bbcObjectMainHub" cx="50%" cy="43%" r="10%" fill="url(#button_surface_blue)" stroke="white" stroke-width="4" />
 		<text id="bbcObjectMainHubText" x="50%" y="48%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "12vh">B</text>
 		<circle  cx="20%" cy="43%" r="5%" fill="url(#button_surface_blue)" stroke="white" stroke-width="2" />
-
-
 		<circle  cx="80%" cy="23%" r="5%" fill="url(#button_surface_blue)"  stroke="white" stroke-width="2" />
 		<text x="80%" y="25%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "5vh">C</text>
 		<circle  cx="80%" cy="43%" r="5%" fill="url(#button_surface_blue)" stroke="white" stroke-width="2" />
 		<text x="80%" y="45%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "5vh">C</text>
 		<circle  cx="80%" cy="63%" r="5%" fill="url(#button_surface_blue)" stroke="white" stroke-width="2" />
 		<text x="80%" y="65%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "5vh">C</text>
-
 		<text x="20%" y="45%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "5vh">B</text>
 		<text id="bbcObjectText"x="50%" y="80%" text-anchor="middle" stroke="white" fill="white" font-style = 'normal' font-size = "4vh">business to business</text>
-
 	</svg>
-
 </div>
 
 <div id = "solutionsSite">
 	<h1 id="websiteServicesText" class='textCentre'>Services and Approach</h1>
-
-
 	<div id = 'solutionsiteServices'>
 		<p class="servicesinfo"><i>A personalised on-line work flow and automation experience tailored to your needs. The sky is really the limit here, and end product may also be something other people may want to use.</i></p>
 			<hr>
-
 		<ul>
 			<li>Initial review of your requirements and brief.</li>
 			<li>Business process modeling of your existing work flows.</li>
@@ -608,16 +542,10 @@
 			<hr>
 			<li>Hosted services and ongoing maintainance and enahancements.</li>						
 		</ul>
-
-
 	</div>
-
 	<h1 class='textCentre'>Components</h1>
-
 	<div id = 'solutionsiteServices'>
-
 		<div class='imageContainer'>
-
 			<img class='servicesImages' src="{% static 'images/analysisdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/webdesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/futuredesign-logo.png' %}" alt="backgroundimage">
@@ -632,14 +560,9 @@
 			<img class='servicesImages' src="{% static 'images/automatedesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/aquistiondesign-logo.png' %}" alt="backgroundimage">
 			<img class='servicesImages' src="{% static 'images/algodesign-logo.png' %}" alt="backgroundimage">
-
 		</div>
-
 	</div>
 </div>
-
-
-
 
 <script src="{% static 'js/home_script.js' %}"></script>
 </body>
