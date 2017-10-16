@@ -1,0 +1,468 @@
+
+{% load staticfiles %} 
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>timstimpson.com</title>
+<link rel="stylesheet" href="{% static 'css/home_styles.css' %}"/>
+
+
+</head>
+
+<body>
+
+ <div id='headerTextFrame'>
+ 	<div id='headerText'>Personalized online business and marketing solutions
+ 	</div>
+
+ </div>
+
+<img id = 'landing_background_sky' src="{% static 'images/blue_sky.jpg' %}" alt="backgroundimage">
+<img id = 'landing_background_night' src="{% static 'images/man_office.jpg' %}" alt="backgroundimage">
+
+<svg id='active_frame'>
+
+	<defs>
+
+	    <linearGradient id="line_grad" x1="40%" x2="40%" y1="75%" y2="65%" gradientUnits="userSpaceOnUse">
+	      <stop stop-color="white" offset="0"/>
+	      <stop stop-color="black" offset="1"/>
+
+	    </linearGradient>
+	    <linearGradient id="line_grad2" gradientUnits="objectBoundingBox">
+	      <stop stop-color="black" offset="0.5"/>
+	      <stop stop-color="white" offset="0.9"/>
+	    </linearGradient>
+
+	    <radialGradient id="button_surface2" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
+	    	<stop stop-color="#7ab2ff" offset="0.00"/>  
+			<stop stop-color="#4d97ff" offset="0.05"/>  	
+	      	<stop stop-color="#056dff" offset="0.35"/>
+	      	<stop stop-color="#004fbd" offset="0.65"/>
+	      	<stop stop-color="#002252" offset="0.98"/>
+	     	<stop stop-color="#002d6b" offset="0.99"/>
+	    </radialGradient>
+
+	    <radialGradient id="button_surface_blue" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
+	    	<stop stop-color="#7ab2ff" offset="0.00"/>  
+
+	      	<stop stop-color="#004fbd" offset="0.57"/>
+
+	     	<stop stop-color="#002d6b" offset="1"/>
+	    </radialGradient>
+
+	    <radialGradient id="button_surface_brown" gradientUnits="objectBoundingBox" cx='45%' cy='43%'>
+	    	<stop stop-color="#8686ac" offset="0.00"/>  
+
+	      	<stop stop-color="#3e3e5b" offset="0.57"/>
+
+	     	<stop stop-color="#1f1f2e" offset="1"/>
+	    </radialGradient>
+
+		<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+			<feGaussianBlur stdDeviation="2 2" result="shadow"/>
+			<feOffset dx="3" dy="3"/>
+		</filter>
+  	</defs>
+
+	<line id='awareness_line_outer' x1="40%" x2="50%" y1="50%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+
+	<line id='awareness_line_middle' x1="35%" x2="40%" y1="35%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+	
+	<line  id='awareness_line_inner' x1="15%" x2="35%" y1="35%" y2="35%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+
+	<circle id='awareness_hub' cx="15%" cy="35%" r="3.5vh" fill="url(#button_surface_blue)" stroke="002252" stroke-width="0%" />
+
+
+	<line id='trialrepeat_line_middle' x1="40%" x2="46.5%" y1="65%" y2="55%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+	<line id='trialrepeat_line_inner' x1="40%" x2="40%" y1="75%" y2="65%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+	<line id='trialrepeat_line_outer' x1="46.5%" x2="50%" y1="55%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+
+	<line id='manage_line_outer' x1="60%" x2="50%" y1="50%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+	<line id='manage_line_middle' x1="70%" x2="60%" y1="50%" y2="50%" stroke='#cce1ff' stroke-width="0.25%" stroke-dasharray="10, 10"/>
+	<line id='manage_line_inner' x1="75%" x2="70%" y1="55%" y2="50%" stroke="#cce1ff" stroke-width="0.25%" stroke-dasharray="10, 10"/>
+
+	<circle id='manage_hub' cx="75%" cy="55%" r="3.5vh" fill="url(#button_surface_blue)" stroke="002252" stroke-width="0%" />
+
+	<circle id='trialrepeat_hub' cx="40%" cy="75%" r="3.5vh" fill="url(#button_surface_blue)" stroke-width="0%" />
+	<circle id='innovation_hub' cx="50%" cy="50%" r="4.5vh"  fill="url(#button_surface_blue)" stroke="#002252" stroke-width="0%"/>
+
+
+	<text id='innovation_text_shadow' style="filter: url(#shadow); fill: black" x="46%" y="43%">Profile</text>
+	<text id='innovation_text' x="46%" y="43%">Profile</text>
+	<text id='awareness_text_shadow' style="filter: url(#shadow); fill: black" x="12%" y="28%">website</text>
+	<text id='awareness_text' x="12%" y="28%">website</text>
+	<text id='trialrepeat_text_shadow' style="filter: url(#shadow); fill: black" x="35%" y="84%">e-commerce</text>
+	<text id='trialrepeat_text' x="35%" y="84%">e-commerce</text>
+	<text id='manage_text_shadow' style="filter: url(#shadow); fill: black" x="68%" y="65%">solutions</text>
+	<text id='manage_text' x="68%" y="65%">solutions</text>
+
+</svg>
+
+<div id='menuFrameBackground' >
+
+</div>
+
+<svg id='menuFrame' >
+
+	<circle id='menuHub' cx="90%" cy="50%" r="5vh" fill="url(#button_surface_blue)" stroke="#8686ac" stroke-width="1px" />
+	<text id='menuTextShadow' style="filter: url(#shadow); fill: black" x="7.5%" y="32%">website</text>
+	<text id='menuText' x="7.5%" y="32%" style="fill: white" >website</text>
+</svg>
+
+
+
+<svg id='menu_bars' >
+	<line id='menu_top' x1="0%" x2="100%" y1="8.5%" y2="8.5%" stroke-linecap="round" stroke="#002d6b" stroke-width="1%"/>
+	<line id='menu_middle' x1="0%" x2="100%" y1="10%" y2="10%" stroke-linecap="round" stroke="#002d6b" stroke-width="1%"/>
+	<line id='menu_bottom' x1="0%" x2="100%" y1="11.5%" y2="11.5%" stroke-linecap="round" stroke="#002d6b" stroke-width="1%"/>
+</svg>
+
+
+
+
+<div id = "contactPage">
+	<div id = 'contactPhone'>
+		<p> call me <a href='tel:07467063066'>07467063066</a></p>
+	</div>
+	<div id = 'contactemail'>
+		<p> email me me <a href="mailto:timothy.stimpson@gmail.com.com">timothy.stimpson@gmail.com</a></p>
+	</div>
+	<div id = 'contactsocial'>
+		<p><span class = 'socialDivider'></span>
+			<span id = 'facebookLink'>facebook</span>
+			<span class = 'socialDivider'></span>
+			<span id = 'linkedinLink'>linkedin</span>
+			<span class = 'socialDivider'></span>
+			<span id = 'whatsAppLink'>whatsapp</span>
+			<span class = 'socialDivider'></span>
+		</p>
+	</div>
+</div>
+
+<div id = "aboutPage">
+	<div id = "aboutText">
+		<h1 class='textCentre'>Skills</h1>
+		<div id = 'projectSkill'>
+		<h2>Project Management</h2>
+		<ul>
+			<li>Experienced in large Programme mobilization and Governance</li>
+			<li>Stakeholder Management at senior levels within the organization</li>
+			<li>Communication at all levels and stages of the programme life cycle</li>
+			<li>Expert in programme delivery cycle through Agile, Waterfall and Hybrid approaches</li>
+			<li>Expert in managing projects with large teams (50+) across multiple divisions with external dependencies and vendors</li>
+			<li>Expert in business process design, technologies and modeling tools</li>
+		</ul>
+		</div>	
+		<div id = 'webSkill'>
+		<h2>Web developer</h2>
+		<p>Web scripting languages expertise including:</p>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+			<li>JQuery</li>
+			<li>Bootstrap</li>
+			<li>Mobile first optimization</li>
+			<li>Django for application functionality</li>
+		</ul>
+		</div>
+		<div id = 'serverSkill'>
+			<h2>Server side</h2>
+			<p>Server set up and configuration including:<p>
+			<ul>
+				<li>Ubuntu 14.04 server</li>
+				<li>Apache 2 web server</li>
+				<li>MySQL Database</li>
+				<li>AWS hosting</li>
+				<li>Security and SSL</li>
+			</ul>
+		</div>
+		<div id = 'appSkill'>
+		<h2>Application Development</h2>
+		<p>Python 3, including self developed, core and 3rd party packages for:<p>
+		<ul>
+			<li>Application model, view and controller</li>
+			<li>Web data acquisition via API’s and HTML tags (Scrapy and Urlib)</li>
+			<li>Custom algorithm to clean, manipulate and format data (SciPy, Numpy, Pandas)</li>
+			<li>Data visualization tools (Matplotlib)</li>
+			<li>Custom object mappings for data persistence</li>
+			<li>Application server (Django)</li>
+			<li>Testing at runtime and integration</li>
+			<li>Data and network security (Django security middleware and SSL certification)</li>
+			<li>Versioning and migration (GIT, SSH and SCP)</li>
+		</ul>
+		</div>
+		<h1 class='textCentre'>History</h1>
+		<div id = 'history'>
+			<p>I have over 16 years experience at a leading investment bank, managing complex and technical global projects spanning 3 continents with multiple divisions and reporting to MD and partner stakeholders</p>
+			<p>As a senior Change Management lead, I excelled and was widely recognized for my deliveries, attention to detail, analytical skills and received partner level recognition for the value I delivered to the business. I have expertise in delivering technical deliverables across the operations organization globally, including regulatory and business process re-engineering, utilizing new technologies to model workflow and drive change, while providing value and efficiency within the organization. I have always been technically minded and delivered as an engineer.</p>
+			<p>Through passion, self-learning and 100% commitment, I have developed technical expertise centered in web and cloud based technologies.</p>
+			<p>This has enabled me to extend and deepen my own interest and development with website development, design tools, data acquisition and cloud data persistence, statistical analysis, algorithms and computational tools, pattern recognition (numerical and language) for my own interest and development.</p>
+		</div>
+		<h1 class='textCentre'>Employment</h1>
+		<div id = 'employment'>
+		<ul>
+			<li>June 2016 - Present Freelance Software developer</li>
+			<li>August 2013 to March 2016 - Goldman Sachs London: Programme Manager</li>
+			<li>May 2008 to August 2013 - Goldman Sachs New York: Programme Manager</li>
+			<li>July 2005 to May 2008 - Goldman Sachs London: Operations</li>
+		</ul>
+		</div>
+		<h1 class='textCentre'>Education</h1>
+		<div id = 'education'>
+		<ul>
+			<li>Master of Engineering : Mechanical engineering, 1999 - Loughborough University</li>
+			<li>Bachelor of Engineering (2:1): Mechanical Engineering, 1998 - Loughborough University</li>		
+		</ul>
+		</div>
+	</div>
+</div>
+
+<div id = "portfolioPage">
+	<h1 class='textCentre'>Customer portal and workflow app</h1>
+	<div id="workFlowApp">
+		<p><i>Analysis, design, build and hosting of a bespoke technology platform to enable a royalties management company to provide a step change to their customers experience, while stream lining and automatting their business processes.</i></p>
+		<h2>Functionality:</h2>
+		<ul class="functionality_list">
+			<li>Customer portal.</li>
+			<li>Customer data entry and retrival.</li>
+			<li>Realtime portal delivery of customer statements.</li>
+			<li>Secure central database of customer information.</li>
+			<li>Intergration with file hosting services.</li>
+			<li>Email notifications of sensitive data changes.</li>
+			<li>STP Reporting to client vendors (20+ templates).</li>
+		</ul>
+		<div id='portalImagesFrame'>
+			<img id="portalHome" class="portalImages" src="{% static 'images/portalHome.png' %}" alt="portalHome">
+			<img id="portalHomeBack" class="portalImagesBack" src="{% static 'images/portalHomeBack.png' %}" alt="portalHome">
+			<div id="portalHomeIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<img id="portalDetails" class="portalImages" src="{% static 'images/portalDetails.png' %}" alt="portalDetails">
+			<img id="portalDetailsBack" class="portalImagesBack" src="{% static 'images/portalDetailsBack.png' %}" alt="portalHome">
+			<div id="portalDetailsIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<img id="portalSummary" class="portalImages" src="{% static 'images/portalSummary.png' %}" alt="portalSummary">
+			<img id="portalSummaryBack" class="portalImagesBack" src="{% static 'images/portalSummaryBack.png' %}" alt="portalHome">
+			<div id="portalSummaryIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<img id="portalForms" class="portalImages" src="{% static 'images/portalForms.png' %}" alt="portalForms">
+			<img id="portalFormsBack" class="portalImagesBack" src="{% static 'images/portalFormsBack.png' %}" alt="portalHome">
+			<div id="portalFormsIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<img id="portalDiscography" class="portalImages" src="{% static 'images/portalDiscography.png' %}" alt="portalDiscography">
+			<img id="portalDiscographyBack" class="portalImagesBack" src="{% static 'images/portalDiscographyBack.png' %}" alt="portalHome">
+			<div id="portalDiscographyIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<img id="portalPassword" class="portalImages" src="{% static 'images/portalPassword.png' %}" alt="portalPassword">
+			<img id="portalPasswordBack" class="portalImagesBack" src="{% static 'images/portalPasswordBack.png' %}" alt="portalHome">
+			<div id="portalPasswordIcon" class="informationIconRow">
+			<div id="informationIcon"><span class="informationIconText"><i>i</i></span></div>
+			</div>
+			<div class='coverFilter'></div>
+		</div>
+		<div id='portalImagesMenu'>
+			<img id="portalHome" class="portalImagesMenu" src="{% static 'images/portalHome.png' %}" alt="portalHome">
+			<img id="portalDetails" class="portalImagesMenu" src="{% static 'images/portalDetails.png' %}" alt="portalDetails">
+			<img id="portalSummary" class="portalImagesMenu" src="{% static 'images/portalSummary.png' %}" alt="portalSummary">
+			<img id="portalForms" class="portalImagesMenu" src="{% static 'images/portalForms.png' %}" alt="portalForms">
+			<img id="portalDiscography" class="portalImagesMenu" src="{% static 'images/portalDiscography.png' %}" alt="portalDiscography">
+			<img id="portalPassword" class="portalImagesMenu" src="{% static 'images/portalPassword.png' %}" alt="portalPassword">
+		</div>
+		<h2>Work completed:</h2>
+		<ul>
+			<li>Full analysis of the clients business proccesses.</li>
+			<li>Creation of workflow diagrams to enable digital transformation of business processes.</li>
+			<li>Created Customer data model.</li>
+			<li>Defined target operating model.</li>
+			<li>Roadmap for modular delivery of the technology build.</li>
+			<li>Wireframe and visual mockups of interfaces.</li>
+			<li>Full stack development of solution, migration and hosting infrastructure.</li>
+			<li>Scripted user testing for functionality, integration testing and unit tests.</li>
+			<li>Knowledge transfer of end product.</li>
+			<li>All completed within the agreed customer budget.</li>
+		</ul>
+	</div>
+	<h1 class='textCentre'>Data collection and reporting app</h1>
+	<div id="webScrapeApp">
+		<p><i>Compiliation and reporting of recording artists written and performed music credits</i></p>
+		<h2>Functionality:</h2>
+		<ul>
+			<li>Database replication of a popular music site, with online website searches to ensure accuracy and completeness.</li>
+			<li>Algorithms and business rules to catergize data into written and performed credits.</li>
+			<li>Output files to enable STP processing of artist discographies for royalty collection purposes.</li>
+			<li>User interface to enable options of the granularity of data provided.</li>
+			<li>Reporting communicated by a user specified email address.</li>
+		</ul>
+
+		<div id='discogImagesFrame'>
+			<img id="discogHome" class="discogImages" src="{% static 'images/discogHome.png' %}" alt="portalHome">
+			<img id="discogHomeBack" class="discogImagesBack" src="{% static 'images/discogHomeBack.png' %}" alt="portalHome">
+			<div id="discogHomeIcon" class="discoginformationIconRow">
+				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="discogArtist" class="discogImages" src="{% static 'images/discogArtist.png' %}" alt="portalDetails">
+			<img id="discogArtistBack" class="discogImagesBack" src="{% static 'images/discogArtistBack.png' %}" alt="portalHome">
+			<div id="discogArtistIcon" class="discoginformationIconRow">
+				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="discogAlias1" class="discogImages" src="{% static 'images/discogAlias1.png' %}" alt="portalSummary">
+			<img id="discogAlias1Back" class="discogImagesBack" src="{% static 'images/discogAlias1Back.png' %}" alt="portalHome">
+			<div id="discogAlias1Icon" class="discoginformationIconRow">
+				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="discogAlias2" class="discogImages" src="{% static 'images/discogAlias2.png' %}" alt="portalForms">
+			<img id="discogAlias2Back" class="discogImagesBack" src="{% static 'images/discogAlias2Back.png' %}" alt="portalHome">
+			<div id="discogAlias2Icon" class="discoginformationIconRow">
+				<div id="discoginformationIcon"><span class="discoginformationIconText"><i>i</i></span></div>
+			</div>
+			<div class='coverFilter'></div>
+		</div>
+		<div id='discogImagesMenu'>
+			<img id="discogHome" class="discogImagesMenu" src="{% static 'images/discogHome.png' %}" alt="portalHome">
+			<img id="discogArtist" class="discogImagesMenu" src="{% static 'images/discogArtist.png' %}" alt="portalDetails">
+			<img id="discogAlias1" class="discogImagesMenu" src="{% static 'images/discogAlias1.png' %}" alt="portalSummary">
+			<img id="discogAlias2" class="discogImagesMenu" src="{% static 'images/discogAlias2.png' %}" alt="portalForms">
+		</div>
+		<h2>Work completed:</h2>
+		<ul>
+			<li>Full analysis of the clients reporting requirements.</li>
+			<li>Analysis of the music sites API and data structure.</li>
+			<li>Wireframe and visual mockups of the web interface to ensure the customer had complete transparency of the end product to be delivered.</li>
+			<li>Utilization of the web interface libraries in Python to collect data.</li>
+			<li>Creation of hosting infrastructure on AWS for application and database.</li>	
+			<li>Automatted scripting tools to ensure the database has current data.</li>			
+			<li>Migration and knowledge transfer to the customer.</li>
+
+		</ul>
+	</div>
+
+	<h1 class='textCentre'>Product roadmap</h1>
+	<div id="designStrategy">
+			<p><i>Technology strategy for a start-up e-vehicle leasing company</i></p>
+		<h2>Analysis completed:</h2>
+		<ul>
+			<li>Reviewed and quatified the brief as supplied by the client.</li>
+			<li>Performed analysis of the project based on the awareness-trial-repeat model of customer behaviour.</li>	
+			<li>Created a technology scope and function requirements list based on website, app and bespoke system model.</li>			
+			<li>Created wireframes and mockups to ensure look and feel of the technology deliverable matched the clients vision.</li>
+			<li>Performed a competitor analysis to highlight the strenghts and weaknesses of the competition.</li>
+			<li>Provided a technology roadmap and implemention options across off the shelf and custom options.</li>						
+		</ul>
+		<div id='planImagesFrame'>
+			<img id="planScope" class="planImages" src="{% static 'images/planScope.jpg' %}" alt="portalHome">
+			<img id="planScopeBack" class="planImagesBack" src="{% static 'images/planScopeBack.png' %}" alt="portalHome">
+			<div id="planScopeIcon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planRequirements" class="planImages" src="{% static 'images/planRequirements.jpg' %}" alt="portalDetails">
+			<img id="planRequirementsBack" class="planImagesBack" src="{% static 'images/planRequirementsBack.png' %}" alt="portalHome">
+			<div id="planRequirementsIcon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planWorkflow" class="planImages" src="{% static 'images/planWorkflow.jpg' %}" alt="portalSummary">
+			<img id="planWorkflowBack" class="planImagesBack" src="{% static 'images/planWorkflowBack.png' %}" alt="portalHome">
+			<div id="planWorkflowIcon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planContent1" class="planImages" src="{% static 'images/planContent1.jpg' %}" alt="portalForms">
+			<img id="planContent1Back" class="planImagesBack" src="{% static 'images/planContent1Back.png' %}" alt="portalHome">
+			<div id="planContent1Icon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planContent2" class="planImages" src="{% static 'images/planContent2.jpg' %}" alt="portalForms">
+			<img id="planContent2Back" class="planImagesBack" src="{% static 'images/planContent2Back.png' %}" alt="portalHome">
+			<div id="planContent2Icon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planOptions1" class="planImages" src="{% static 'images/planOptions1.jpg' %}" alt="portalForms">
+			<img id="planOptions1Back" class="planImagesBack" src="{% static 'images/planOptions1Back.png' %}" alt="portalHome">
+			<div id="planOptions1Icon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+			<img id="planOptions2" class="planImages" src="{% static 'images/planOptions2.jpg' %}" alt="portalForms">
+			<img id="planOptions2Back" class="planImagesBack" src="{% static 'images/planOptions2Back.png' %}" alt="portalHome">
+			<div id="planOptions2Icon" class="planinformationIconRow">
+				<div id="planinformationIcon"><span class="planinformationIconText"><i>i</i></span></div>
+			</div>
+		</div>
+		<div id='planImagesMenu'>
+			<img id="planScope" class="planImagesMenu" src="{% static 'images/planScope.jpg' %}" alt="portalHome">
+			<img id="planRequirements" class="planImagesMenu" src="{% static 'images/planRequirements.jpg' %}" alt="portalDetails">
+			<img id="planWorkflow" class="planImagesMenu" src="{% static 'images/planWorkflow.jpg' %}" alt="portalSummary">
+			<img id="planContent1" class="planImagesMenu" src="{% static 'images/planContent1.jpg' %}" alt="portalForms">
+			<img id="planContent2" class="planImagesMenu" src="{% static 'images/planContent2.jpg' %}" alt="portalDetails">
+			<img id="planOptions1" class="planImagesMenu" src="{% static 'images/planOptions1.jpg' %}" alt="portalSummary">
+			<img id="planOptions2" class="planImagesMenu" src="{% static 'images/planOptions2.jpg' %}" alt="portalForms">
+		</div>
+
+	</div>
+
+</div>
+
+<div id = "webSite1">
+
+	<p>Let your site</p>
+	<p id="standOutText">stand out</p>
+
+</div>
+
+<div id = "webSite2">
+	<div class="container">
+	  <div id="carousel">
+	    <div class="item a"><img id = 'horsemotion1' class="horseMotion" src="{% static 'images/horseMotion/horseMotion1.jpg' %}" alt="backgroundimage"></div>
+		<div class="item b"><img id = 'horsemotion2' class="horseMotion" src="{% static 'images/horseMotion/horseMotion2.jpg' %}" alt="backgroundimage"></div>
+		<div class="item c"><img id = 'horsemotion3' class="horseMotion" src="{% static 'images/horseMotion/horseMotion3.jpg' %}" alt="backgroundimage"></div>
+		<div class="item d"><img id = 'horsemotion4' class="horseMotion" src="{% static 'images/horseMotion/horseMotion4.jpg' %}" alt="backgroundimage"></div>
+		<div class="item e"><img id = 'horsemotion5' class="horseMotion" src="{% static 'images/horseMotion/horseMotion5.jpg' %}" alt="backgroundimage"></div>
+		<div class="item f"><img id = 'horsemotion6' class="horseMotion" src="{% static 'images/horseMotion/horseMotion6.jpg' %}" alt="backgroundimage"></div>
+		<div class="item g"><img id = 'horsemotion7' class="horseMotion" src="{% static 'images/horseMotion/horseMotion7.jpg' %}" alt="backgroundimage"></div>
+		<div class="item h"><img id = 'horsemotion8' class="horseMotion" src="{% static 'images/horseMotion/horseMotion8.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item i"><img id = 'horsemotion9' class="horseMotion" src="{% static 'images/horseMotion/horseMotion9.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item j"><img id = 'horsemotion10' class="horseMotion" src="{% static 'images/horseMotion/horseMotion10.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item k"><img id = 'horsemotion11' class="horseMotion" src="{% static 'images/horseMotion/horseMotion11.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item l"><img id = 'horsemotion12' class="horseMotion" src="{% static 'images/horseMotion/horseMotion12.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item m"><img id = 'horsemotion13' class="horseMotion" src="{% static 'images/horseMotion/horseMotion13.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item n"><img id = 'horsemotion14' class="horseMotion" src="{% static 'images/horseMotion/horseMotion14.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item o"><img id = 'horsemotion15' class="horseMotion" src="{% static 'images/horseMotion/horseMotion15.jpg' %}" alt="backgroundimage"></div>
+	    <div class="item p"><img id = 'horsemotion16' class="horseMotion" src="{% static 'images/horseMotion/horseMotion16.jpg' %}" alt="backgroundimage"></div>
+	  </div>
+	</div>
+	<div id="next">Next</div>
+	<div id="prev">Prev</div>
+	<div class="topfilter">
+	</div>
+	<div class="leftfilter">
+	</div>
+	<div class="rightfilter">
+	</div>
+	<div class="bottomfilter">
+	</div>
+
+</div>
+
+<div id="webSiteStandOut">
+
+</div>
+
+<div id = "marketSite">
+	<p> marketsite</p>
+	<p> marketsite</p>
+</div>
+
+<div id = "solutionsSite">
+	<p> solutionssite</p>
+	<p> solutionssite</p>
+</div>
+
+
+
+<script src="{% static 'js/home_script.js' %}"></script>
+</body>
+</html>
